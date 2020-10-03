@@ -1,22 +1,50 @@
 <html>
     <head>
         <title>First DApp</title>
-	    <style>
-		    .heading{
-		    font-size:40px;
-		    color:blue;
-		    align :center;
-		    }  
-	    </style>
-    </head>
+	</head>
+	<style>
+		body{
+			background-color: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.main{
+			padding: 10px;
+			border-radius: 10px;
+			background-color: burlywood;
+			height: 400px;
+			width: 290px;
+		}
+		.footer{
+			position: absolute;
+			width: 270px;;
+			top: 470px;
+		}
+		#deposit{
+			background-color: green;
+			color: white;
+			font-size: 18px;
+			margin-left: 30px;
+		}
+		#withdraw{
+			background-color: blue;
+			color: white;
+			font-size: 18px;
+			margin-left: 50px;
+		}
+	</style>
     <body>
-        <h1 class="heading">Welcome Champs Of DCRUST</h1>
-        <div>
-            Balance : <input type="text"  id="amount">
-            <p id="balance"></p>
-            <button id="deposit">Deposit</button>
-            <button id="withdraw">Withdraw</button>
-        </div>
+		<div class="main">
+        <h1 style="text-align: center;">Welcome Everyone</h1><br>
+			Balance : <input type="text"  id="amount"><br><br><br><br>
+			<button id="deposit">Deposit</button>
+			<button id="withdraw">Withdraw</button><br><br><br>
+            Current Balance: <p id="balance"></p>
+			<div class="footer"><hr>
+				@Sourabh_Singhal</div>
+			
+		</div>
         <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
         <script>
@@ -107,7 +135,5 @@
 				})
 			})
         </script>
-        <hr>
-        @NIELIT2020
     </body>
 </html>
